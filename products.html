@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - FASHION</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html">FASHION</a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                        <li><a href="products.html?category=sale">Sale</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#" class="icon-search"><i class="fas fa-search"></i></a>
+                    <a href="#" class="icon-user"><i class="fas fa-user"></i></a>
+                    <a href="#" class="icon-heart"><i class="fas fa-heart"></i></a>
+                    <a href="cart.html" class="icon-cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html?category=women">Women</a></li>
+            <li><a href="products.html?category=men">Men</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+            <li><a href="products.html?category=sale">Sale</a></li>
+        </ul>
+        <div class="mobile-account">
+            <div class="account-header">
+                <div class="account-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="account-info">
+                    <div class="account-name">Guest</div>
+                    <div class="account-action">Sign in</div>
+                </div>
+            </div>
+            <ul class="account-links">
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Products Page Content -->
+    <div class="products-page">
+        <div class="container">
+            <div class="products-header">
+                <h1 id="products-title">All Products</h1>
+                <p id="products-description">Browse our collection of fashion items</p>
+            </div>
+
+            <div class="products-layout">
+                <!-- Filters Sidebar -->
+                <div class="filters-sidebar">
+                    <div class="filters-header">
+                        <h3>Filters</h3>
+                        <button id="clear-filters" class="clear-filters">Clear all</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-title">
+                            <h4>Category</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="filter-options">
+                            <div class="filter-option">
+                                <input type="checkbox" id="category-tshirts" name="category" value="t-shirts">
+                                <label for="category-tshirts">T-shirts</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="category-jeans" name="category" value="jeans">
+                                <label for="category-jeans">Jeans</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="category-sweaters" name="category" value="sweaters">
+                                <label for="category-sweaters">Sweaters</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="category-accessories" name="category" value="accessories">
+                                <label for="category-accessories">Accessories</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="category-shoes" name="category" value="shoes">
+                                <label for="category-shoes">Shoes</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="category-outerwear" name="category" value="outerwear">
+                                <label for="category-outerwear">Outerwear</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="category-dresses" name="category" value="dresses">
+                                <label for="category-dresses">Dresses</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="category-skirts" name="category" value="skirts">
+                                <label for="category-skirts">Skirts</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-title">
+                            <h4>Size</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="filter-options">
+                            <div class="filter-option">
+                                <input type="checkbox" id="size-xs" name="size" value="xs">
+                                <label for="size-xs">XS</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="size-s" name="size" value="s">
+                                <label for="size-s">S</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="size-m" name="size" value="m">
+                                <label for="size-m">M</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="size-l" name="size" value="l">
+                                <label for="size-l">L</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="size-xl" name="size" value="xl">
+                                <label for="size-xl">XL</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-title">
+                            <h4>Color</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="filter-options">
+                            <div class="filter-option">
+                                <input type="checkbox" id="color-black" name="color" value="black">
+                                <label for="color-black">Black</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="color-white" name="color" value="white">
+                                <label for="color-white">White</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="color-gray" name="color" value="gray">
+                                <label for="color-gray">Gray</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="color-blue" name="color" value="blue">
+                                <label for="color-blue">Blue</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="color-navy" name="color" value="navy">
+                                <label for="color-navy">Navy</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="color-brown" name="color" value="brown">
+                                <label for="color-brown">Brown</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="color-beige" name="color" value="beige">
+                                <label for="color-beige">Beige</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="color-red" name="color" value="red">
+                                <label for="color-red">Red</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-title">
+                            <h4>Price</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="filter-options">
+                            <div class="filter-option">
+                                <input type="checkbox" id="price-under-50" name="price" value="under-50">
+                                <label for="price-under-50">Under Rs. 500</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="price-50-100" name="price" value="50-100">
+                                <label for="price-50-100">Rs. 500 to Rs. 1000</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="price-100-200" name="price" value="100-200">
+                                <label for="price-100-200">Rs. 1000 to Rs. 2000</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="price-over-200" name="price" value="over-200">
+                                <label for="price-over-200">Over Rs. 2000</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-container">
+                    <div class="products-grid" id="products-grid">
+                        <!-- Product cards will be dynamically inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>FASHION</h3>
+                    <p>
+                        Discover the latest trends in fashion and explore our wide collection of clothing, shoes, and accessories.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                        <li><a href="products.html?category=sale">Sale</a></li>
+                        <li><a href="products.html?collection=new">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Stay Updated</h3>
+                    <p>
+                        Subscribe to our newsletter to receive updates on new arrivals and special promotions.
+                    </p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fas fa-envelope"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Fashion Store. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product-page.js"></script>
+</body>
+</html>

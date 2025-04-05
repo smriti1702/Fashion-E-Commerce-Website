@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - FASHION</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html">FASHION</a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                        <li><a href="products.html?category=sale">Sale</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#" class="icon-search"><i class="fas fa-search"></i></a>
+                    <a href="#" class="icon-user"><i class="fas fa-user"></i></a>
+                    <a href="#" class="icon-heart"><i class="fas fa-heart"></i></a>
+                    <a href="cart.html" class="icon-cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html?category=women">Women</a></li>
+            <li><a href="products.html?category=men">Men</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+            <li><a href="products.html?category=sale">Sale</a></li>
+        </ul>
+        <div class="mobile-account">
+            <div class="account-header">
+                <div class="account-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="account-info">
+                    <div class="account-name">Guest</div>
+                    <div class="account-action">Sign in</div>
+                </div>
+            </div>
+            <ul class="account-links">
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <section class="product-detail section">
+        <div class="container">
+            <div class="product-detail-grid">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="main-product-image" src="images/products/product-1.jpg" alt="Product Image">
+                    </div>
+                    <div class="thumbnail-images" id="thumbnail-images">
+                        <!-- Thumbnail images will be added dynamically -->
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 id="product-name">Product Name</h1>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span id="review-count">127 reviews</span>
+                    </div>
+                    <div class="product-price" id="product-price">Rs. 2999</div>
+                    
+                    <div class="product-description" id="product-description">
+                        A comfortable oversized t-shirt made from 100% organic cotton. Perfect for casual everyday wear.
+                    </div>
+                    
+                    <!-- Color Selection -->
+                    <div class="product-colors">
+                        <h3>Color</h3>
+                        <div class="color-options" id="color-options">
+                            <!-- Color options will be added dynamically -->
+                        </div>
+                        <p id="selected-color" class="selected-option">Selected: <span>None</span></p>
+                    </div>
+                    
+                    <!-- Size Selection -->
+                    <div class="product-sizes">
+                        <div class="size-header">
+                            <h3>Size</h3>
+                            <button class="size-guide">Size Guide</button>
+                        </div>
+                        <div class="size-options" id="size-options">
+                            <!-- Size options will be added dynamically -->
+                        </div>
+                    </div>
+                    
+                    <!-- Quantity -->
+                    <div class="product-quantity">
+                        <h3>Quantity</h3>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Add to Cart -->
+                    <div class="product-actions">
+                        <button id="add-to-cart" class="btn btn-primary">
+                            <i class="fas fa-shopping-bag"></i> Add to Cart
+                        </button>
+                        <button class="btn-icon">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="btn-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Additional Info -->
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">SKU:</span>
+                            <span id="product-sku" class="meta-value">TS-1001</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Category:</span>
+                            <span id="product-category" class="meta-value">T-shirts</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Tags:</span>
+                            <span id="product-tags" class="meta-value">Cotton, Casual, Summer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Recommendations -->
+            <div class="product-recommendations">
+                <h2>You might also like</h2>
+                <div class="products-grid" id="recommended-products">
+                    <!-- Recommended products will be added dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>FASHION</h3>
+                    <p>
+                        Discover the latest trends in fashion and explore our wide collection of clothing, shoes, and accessories.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                        <li><a href="products.html?category=sale">Sale</a></li>
+                        <li><a href="products.html?collection=new">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Stay Updated</h3>
+                    <p>
+                        Subscribe to our newsletter to receive updates on new arrivals and special promotions.
+                    </p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fas fa-envelope"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Fashion Store. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html>

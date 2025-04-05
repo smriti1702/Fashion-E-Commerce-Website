@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION - Online Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html">FASHION</a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                        <li><a href="products.html?category=sale">Sale</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#" class="icon-search"><i class="fas fa-search"></i></a>
+                    <a href="#" class="icon-user"><i class="fas fa-user"></i></a>
+                    <a href="#" class="icon-heart"><i class="fas fa-heart"></i></a>
+                    <a href="cart.html" class="icon-cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html?category=women">Women</a></li>
+            <li><a href="products.html?category=men">Men</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+            <li><a href="products.html?category=sale">Sale</a></li>
+        </ul>
+        <div class="mobile-account">
+            <div class="account-header">
+                <div class="account-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="account-info">
+                    <div class="account-name">Guest</div>
+                    <div class="account-action">Sign in</div>
+                </div>
+            </div>
+            <ul class="account-links">
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('summer-collection.webp');">
+                <div class="slide-content left">
+                    <h1>Summer Collection 2024</h1>
+                    <p>Discover the latest trends for the season</p>
+                    <a href="products.html?collection=summer" class="btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('new-arrivals.webp');">
+                <div class="slide-content center">
+                    <h1>New Arrivals</h1>
+                    <p>Be the first to wear our newest styles</p>
+                    <a href="products.html?collection=new" class="btn">Explore</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('accessories.jpg');">
+                <div class="slide-content right">
+                    <h1>Accessories Collection</h1>
+                    <p>Complete your look with our premium accessories</p>
+                    <a href="products.html?category=accessories" class="btn">Shop Accessories</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-arrow prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop by Category</h2>
+                <a href="products.html" class="view-all">
+                    View all <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="categories-grid">
+                <a href="products.html?category=women" class="category-card">
+                    <div class="category-image">
+                        <img src="women.avif" alt="Women's Fashion">
+                    </div>
+                    <div class="category-content">
+                        <h3>Women</h3>
+                        <p>Shop Now</p>
+                    </div>
+                </a>
+                <a href="products.html?category=men" class="category-card">
+                    <div class="category-image">
+                        <img src="men.jpg" alt="Men's Fashion">
+                    </div>
+                    <div class="category-content">
+                        <h3>Men</h3>
+                        <p>Shop Now</p>
+                    </div>
+                </a>
+                <a href="products.html?category=accessories" class="category-card">
+                    <div class="category-image">
+                        <img src="acssessories2.avif" alt="Accessories">
+                    </div>
+                    <div class="category-content">
+                        <h3>Accessories</h3>
+                        <p>Shop Now</p>
+                    </div>
+                </a>
+                <a href="products.html?category=shoes" class="category-card">
+                    <div class="category-image">
+                        <img src="shoes.jpeg" alt="Shoes">
+                    </div>
+                    <div class="category-content">
+                        <h3>Shoes</h3>
+                        <p>Shop Now</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>New Arrivals</h2>
+                <a href="products.html" class="view-all">
+                    View all <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="products-grid">
+                <!-- Product cards will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotion Banner -->
+    <section class="promo-banner section">
+        <div class="container">
+            <div class="banner" style="background-image: url('summer.webp');">
+                <div class="banner-content">
+                    <h2>Summer Collection</h2>
+                    <p>Discover our latest summer styles with up to 40% off selected items.</p>
+                    <a href="products.html?collection=summer" class="btn btn-light">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section bg-light">
+        <div class="container">
+            <div class="newsletter-content">
+                <i class="fas fa-envelope"></i>
+                <h2>Subscribe to our newsletter</h2>
+                <p>Stay updated with our latest collections, exclusive offers, and fashion tips.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <div id="newsletter-success" class="newsletter-success">
+                    Thank you for subscribing! We've sent a confirmation email to your inbox.
+                </div>
+                <p class="newsletter-disclaimer">
+                    By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>FASHION</h3>
+                    <p>
+                        Discover the latest trends in fashion and explore our wide collection of clothing, shoes, and accessories.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                        <li><a href="products.html?category=sale">Sale</a></li>
+                        <li><a href="products.html?collection=new">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Stay Updated</h3>
+                    <p>
+                        Subscribe to our newsletter to receive updates on new arrivals and special promotions.
+                    </p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fas fa-envelope"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Fashion Store. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

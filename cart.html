@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - FASHION</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html">FASHION</a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                        <li><a href="products.html?category=sale">Sale</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#" class="icon-search"><i class="fas fa-search"></i></a>
+                    <a href="#" class="icon-user"><i class="fas fa-user"></i></a>
+                    <a href="#" class="icon-heart"><i class="fas fa-heart"></i></a>
+                    <a href="cart.html" class="icon-cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html?category=women">Women</a></li>
+            <li><a href="products.html?category=men">Men</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+            <li><a href="products.html?category=sale">Sale</a></li>
+        </ul>
+        <div class="mobile-account">
+            <div class="account-header">
+                <div class="account-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="account-info">
+                    <div class="account-name">Guest</div>
+                    <div class="account-action">Sign in</div>
+                </div>
+            </div>
+            <ul class="account-links">
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Cart Page -->
+    <section class="cart-page section">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            
+            <!-- Empty Cart Message (shown when cart is empty) -->
+            <div id="empty-cart" class="empty-cart">
+                <i class="fas fa-shopping-bag"></i>
+                <h2>Your cart is empty</h2>
+                <p>Looks like you haven't added anything to your cart yet.</p>
+                <a href="products.html" class="btn">Continue Shopping</a>
+            </div>
+            
+            <!-- Cart Content (shown when cart has items) -->
+            <div id="cart-content" class="cart-content">
+                <div class="cart-grid">
+                    <!-- Cart Items -->
+                    <div class="cart-items">
+                        <div class="cart-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart-items">
+                                    <!-- Cart items will be added dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="cart-actions">
+                            <a href="products.html" class="btn btn-outline">Continue Shopping</a>
+                            <button id="clear-cart" class="btn btn-outline">Clear Cart</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Summary -->
+                    <div class="cart-summary">
+                        <h2>Order Summary</h2>
+                        
+                        <div class="summary-items">
+                            <div class="summary-item">
+                                <span>Subtotal</span>
+                                <span id="cart-subtotal">Rs. 0.00</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Shipping</span>
+                                <span id="cart-shipping">Rs. 0.00</span>
+                            </div>
+                            <div class="summary-total">
+                                <span>Total</span>
+                                <span id="cart-total">Rs. 0.00</span>
+                            </div>
+                        </div>
+                        
+                        <div id="shipping-message" class="shipping-message">
+                            Add Rs. 100.00 more to qualify for free shipping.
+                        </div>
+                        
+                        <a href="checkout.html" class="btn btn-primary checkout-btn">
+                            Proceed to Checkout <i class="fas fa-arrow-right"></i>
+                        </a>
+                        
+                        <div class="payment-methods">
+                            <p>We accept:</p>
+                            <div class="payment-icons">
+                                <div class="payment-icon"></div>
+                                <div class="payment-icon"></div>
+                                <div class="payment-icon"></div>
+                                <div class="payment-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>FASHION</h3>
+                    <p>
+                        Discover the latest trends in fashion and explore our wide collection of clothing, shoes, and accessories.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html?category=women">Women</a></li>
+                        <li><a href="products.html?category=men">Men</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                        <li><a href="products.html?category=sale">Sale</a></li>
+                        <li><a href="products.html?collection=new">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Stay Updated</h3>
+                    <p>
+                        Subscribe to our newsletter to receive updates on new arrivals and special promotions.
+                    </p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fas fa-envelope"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Fashion Store. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
